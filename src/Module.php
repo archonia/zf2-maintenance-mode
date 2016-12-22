@@ -36,7 +36,6 @@ class Module implements InitProviderInterface, ConfigProviderInterface
             return;
         }
 
-        $rootApplicationPath = realpath(dirname('.'));
         $userConfig          = $this->getUserConfig();
 
         if (! isset($userConfig['maintenance']['flag_file'])) {
@@ -45,7 +44,7 @@ class Module implements InitProviderInterface, ConfigProviderInterface
             );
         }
 
-        if (file_exists($rootApplicationPath . DIRECTORY_SEPARATOR . $userConfig['maintenance']['flag_file'])) {
+        if (file_exists($userConfig['maintenance']['flag_file'])) {
             if (! isset($userConfig['maintenance']['status_code']) ||
                 ! isset($userConfig['maintenance']['message'])
             ) {
