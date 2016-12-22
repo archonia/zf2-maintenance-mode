@@ -1,5 +1,5 @@
 {
-    "name": "mpalourdio/zf2-maintenance-mode",
+    "name": "archonia/zf2-maintenance-mode",
     "description": "ZF2 maintenance mode module",
     "license": "MIT",
     "keywords": [
@@ -7,7 +7,7 @@
         "zf2",
         "maintenance"
     ],
-    "homepage": "https://github.com/mpalourdio/zf2-maintenance-mode",
+    "homepage": "https://github.com/archonia/zf2-maintenance-mode",
     "authors": [
         {
             "name": "@mpalourdio",
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": ">=5.5",
         "zendframework/zend-console": "~2.3",
         "zendframework/zend-mvc": "~2.3",
         "zendframework/zend-modulemanager": "~2.3",
